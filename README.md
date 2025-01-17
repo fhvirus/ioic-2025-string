@@ -1,8 +1,9 @@
-# IOICamp 2025 字串演算法實作
+# IOICamp 2025 字串演算法
 
-FHVirus' implementation for string algorithms while learning.
+題單待補。
 
-- KMP, Z, Aho-Corasick are tested at [TIOJ 1306](https://tioj.ck.tp.edu.tw/problems/1306)
+- Hash, KMP, Z, Aho-Corasick, SAM are tested at [TIOJ 1306 字串中的字串](https://tioj.ck.tp.edu.tw/problems/1306)
+- Suffix BST is tested at [Codeforces 103328D](https://codeforces.com/problemset/gymProblem/103328/D)
 
 ## 延伸閱讀及參考資料
 
@@ -29,6 +30,6 @@ FHVirus' implementation for string algorithms while learning.
 ### Automata
 
 - [Introduction to the Theory of Computation, 3rd edition by Michael Sipser](https://math.mit.edu/~sipser/book.html)
-    有興趣的可以讀讀看第一章（網路上應該找得到 PDF 檔）。
+    - 有興趣的可以讀讀看第一章（網路上應該找得到 PDF 檔）。
 - [SAM Visualization](https://kg86.github.io/visds/dist/vis_dawg.html)
 - [SAM Tutorial](https://cp-algorithms.com/string/suffix-automaton.html)
