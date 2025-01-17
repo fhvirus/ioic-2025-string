@@ -5,6 +5,42 @@
 - Hash, KMP, Z, Aho-Corasick, SAM are tested at [TIOJ 1306 字串中的字串](https://tioj.ck.tp.edu.tw/problems/1306)
 - Suffix BST is tested at [Codeforces 103328D](https://codeforces.com/problemset/gymProblem/103328/D)
 
+
+
+---
+
+## 習題
+
+
+### 字串匹配
+
+- [Library Checker Z Algorithm](https://judge.yosupo.jp/problem/zalgorithm)
+- [NEOJ 263 誒底的字串](https://neoj.sprout.tw/problem/263)
+- [TIOJ 1531 kukukey](https://tioj.ck.tp.edu.tw/problems/1531)
+- [NTUCPCOJ 214 兩全其美](https://oj.ntucpc.org/problems/214)
+- [2021 ICPC Taipei pK Insertion Array](https://codeforces.com/gym/103443/problem/K)
+
+回文：
+
+- [SPOJ LPS](https://www.spoj.com/problems/LPS/)
+- [Library Checker Enumerate Palindromes](https://judge.yosupo.jp/problem/enumerate_palindromes)
+
+### 字串比較與後綴資料結構
+
+- [TIOJ 1497 喝醉的宿主 The drunk host](https://tioj.ck.tp.edu.tw/problems/1497)
+- [Library Checker Suffix Array](https://judge.yosupo.jp/problem/suffixarray)
+- [Library Checker Number of Substrings](https://judge.yosupo.jp/problem/number_of_substrings)
+- [Luogu 6164 【模板】后缀平衡树](https://www.luogu.com.cn/problem/P6164)
+- [NTU NCPC Preliminary 2021 pD String Repetition](https://codeforces.com/problemset/gymProblem/103328/D)
+
+### 字串與自動機
+
+- [NTU NCPC Preliminary 2021 pD String Repetition](https://codeforces.com/problemset/gymProblem/103328/D)
+
+
+
+---
+
 ## 延伸閱讀及參考資料
 
 ###  Rolling Hash
@@ -31,5 +67,6 @@
 
 - [Introduction to the Theory of Computation, 3rd edition by Michael Sipser](https://math.mit.edu/~sipser/book.html)
     - 有興趣的可以讀讀看第一章（網路上應該找得到 PDF 檔）。
+- [AC 自動機 $O(N \sqrt N)$ 找相異子字串的實作](https://github.com/kth-competitive-programming/kactl/blob/main/content/strings/AhoCorasick.h)
 - [SAM Visualization](https://kg86.github.io/visds/dist/vis_dawg.html)
 - [SAM Tutorial](https://cp-algorithms.com/string/suffix-automaton.html)
