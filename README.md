@@ -3,6 +3,10 @@
 - Hash, KMP, Z, Aho-Corasick, SAM are tested at [TIOJ 1306 字串中的字串](https://tioj.ck.tp.edu.tw/problems/1306)
 - Suffix BST is tested at [Codeforces 103328D](https://codeforces.com/problemset/gymProblem/103328/D)
 
+| Problem | Hash | KMP  | Z   | SA  | Aho-Corasick | SAM |
+| ------- | ---- | ---- | --- | --- | ------------ | --- |
+| TIOJ 1306 | $O(Q \lvert T \rvert + \sum \lvert P_i \rvert)$ (TLE) or $O(\sum \lvert P_i \rvert + \sqrt{\sum \lvert P_i \rvert} \lvert T \rvert + Q)$ | $O(Q \lvert T \rvert + \sum \lvert P_i \rvert)$ (TLE) | $O(Q \lvert T \rvert + \sum \lvert P_i \rvert)$ (AC) | $O(\text{SA}(T) + \text{RMQ}_\text{build}(T) + \sum \lvert P_i \rvert \log \lvert T \rvert \text{RMQ}_\text{query}(T))$ or $O(\text{SA}(T) + \text{RMQ}_\text{build}(T) + \sum \lvert P_i \rvert \text{RMQ}_\text{query}(T))$ | $O(\lvert T \rvert + \sum \lvert P_i \rvert)$ | $O(\lvert T \rvert + \sum \lvert P_i \rvert)$ |
+
 ---
 
 ## 習題
@@ -25,7 +29,7 @@ KMP 和 Z：
 - $O(n)$ fail function 轉 Z value
     - [NTUCPCOJ 214 兩全其美](https://oj.ntucpc.org/problems/214)
 - 給定字串 $A, B$ 以及一個整數 $k$，求出所有 $B$ 在 $A$ 中 $k$ 幾乎匹配的位置。
-    我們稱 $A[i, i+n-1], B[j, j+n-1]$ 是 $k$-幾乎匹配如果 $\{ A[i+x] \neq B[j+x], \: 0 \leq x \leq n-1 \}$ 的個數不超過 $k$ 個。
+    我們稱 $A[i, i+n-1], B[j, j+n-1]$ 是 $k$-幾乎匹配如果 $\\{ A[i+x] \ne B[j+x], 0 \le x \le n-1 \\}$ 的個數不超過 $k$ 個。
     - $O(k \lvert A \rvert + \lvert B \rvert)$
     - 這題也可以 $\Sigma$ 次卷積做……
 - [Library Checker Z Algorithm](https://judge.yosupo.jp/problem/zalgorithm)
@@ -62,6 +66,7 @@ SA:
 - [Codeforces 128B String](https://codeforces.com/problemset/problem/128/B)（第 K 小子字串）
 - [Codeforces 1252D Find String in a Grid](https://codeforces.com/problemset/problem/1252/D)
 - [2020 IOICamp Day5 pD 小風數堅果](https://oj.ntucpc.org/problems/267)
+    - 用 $O(n \log n)$ 蓋 SA 也可以過，不過其他部份要聰明一些（就算用 [SAIS](https://github.com/OmeletWithoutEgg/ckiseki/blob/master/codes/String/SAIS-C%2B%2B20.cpp) 也一樣）
 - 以下三題 idea 類似：
     - 用 SA 做 [Main-Lorentz](https://cp-algorithms.com/string/main_lorentz.html)
     - [The 3rd Universal Cup, Stage 14: Harbin, pD A Simple String Problem](https://codeforces.com/gym/105459/problem/D)
@@ -83,6 +88,7 @@ Suffix BST：
 - [2013-2014 ACM-ICPC, NEERC, Northern Subregional Contest C Correcting Curiosity](https://codeforces.com/gym/100269)（很難）
 - [Codeforces 700E Cool Slogans](https://codeforces.com/problemset/problem/700/E)
 - [Codeforces 235C Cyclical Quest](https://codeforces.com/problemset/problem/235/C)
+- [2020 IOICamp Day5 pD 小風數堅果](https://oj.ntucpc.org/problems/267)
 
 ### 更多習題
 
