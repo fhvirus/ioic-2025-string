@@ -56,9 +56,9 @@ SA:
 - [Library Checker Suffix Array](https://judge.yosupo.jp/problem/suffixarray)
 - [Library Checker Number of Substrings](https://judge.yosupo.jp/problem/number_of_substrings)
 - 最長重複子字串：給定字串 $S$，求出 $S$ 的所有子字串中，出現至少兩次的、最長的那個。
-    - 例：$S = \texttt{cabababc}$，最長的重複子字串為 $\texttt{aba}$。
-    - $O(\text{SA} + |S|)$
-    - 兩者不能重疊的話是 $O(|S| \log |S|)$
+    - 例： $S = \texttt{cabababc}$ ，最長的重複子字串為 $\texttt{aba}$。
+    - $O(\text{SA} + n)$
+    - 兩者不能重疊的話是 $O(n \log n)$
 - [Codeforces 128B String](https://codeforces.com/problemset/problem/128/B)（第 K 小子字串）
 - [Codeforces 1252D Find String in a Grid](https://codeforces.com/problemset/problem/1252/D)
 - [2020 IOICamp Day5 pD 小風數堅果](https://oj.ntucpc.org/problems/267)
@@ -66,8 +66,8 @@ SA:
     - 用 SA 做 [Main-Lorentz](https://cp-algorithms.com/string/main_lorentz.html)
     - [The 3rd Universal Cup, Stage 14: Harbin, pD A Simple String Problem](https://codeforces.com/gym/105459/problem/D)
     - 最多次連續重複子字串：給一個字串 $S$，求出他的連續重複次數最多的子字串。
-        - 例：$A = \texttt{cababababc}$，$\texttt{ab}$ 在子字串 $\texttt{abababab}$ 中連續重複了 $4$ 次。
-        - $O(\text{SA} + |S| \log |S|)$
+        - 例： $A = \texttt{cababababc}$ ， $\texttt{ab}$ 在子字串 $\texttt{abababab}$ 中連續重複了 $4$ 次。
+        - $O(\text{SA} + n \log n)$
     - 似乎都可以分治，但是可以用一個酷酷的技巧（待補，來問我！）
 
 Suffix BST：
@@ -82,6 +82,7 @@ Suffix BST：
 - [NTU NCPC Preliminary 2021 pD String Repetition](https://codeforces.com/problemset/gymProblem/103328/D)
 - [2013-2014 ACM-ICPC, NEERC, Northern Subregional Contest C Correcting Curiosity](https://codeforces.com/gym/100269)（很難）
 - [Codeforces 700E Cool Slogans](https://codeforces.com/problemset/problem/700/E)
+- [Codeforces 235C Cyclical Quest](https://codeforces.com/problemset/problem/235/C)
 
 ### 更多習題
 
