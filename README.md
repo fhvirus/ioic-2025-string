@@ -3,9 +3,7 @@
 - Hash, KMP, Z, Aho-Corasick, SAM are tested at [TIOJ 1306 字串中的字串](https://tioj.ck.tp.edu.tw/problems/1306)
 - Suffix BST is tested at [Codeforces 103328D](https://codeforces.com/problemset/gymProblem/103328/D)
 
-| Problem | Hash | KMP  | Z   | SA  | Aho-Corasick | SAM |
-| ------- | ---- | ---- | --- | --- | ------------ | --- |
-| TIOJ 1306 | $O(Q \lvert T \rvert + \sum \lvert P_i \rvert)$ (TLE) or $O(\sum \lvert P_i \rvert + \sqrt{\sum \lvert P_i \rvert} \lvert T \rvert + Q)$ | $O(Q \lvert T \rvert + \sum \lvert P_i \rvert)$ (TLE) | $O(Q \lvert T \rvert + \sum \lvert P_i \rvert)$ (AC) | $O(\text{SA}(T) + \text{RMQ}_\text{build}(T) + \sum \lvert P_i \rvert \log \lvert T \rvert \text{RMQ}_\text{query}(T))$ or $O(\text{SA}(T) + \text{RMQ}_\text{build}(T) + \sum \lvert P_i \rvert \text{RMQ}_\text{query}(T))$ | $O(\lvert T \rvert + \sum \lvert P_i \rvert)$ | $O(\lvert T \rvert + \sum \lvert P_i \rvert)$ |
+![](table.png)
 
 ---
 

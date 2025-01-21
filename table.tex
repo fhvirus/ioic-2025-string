@@ -1,0 +1,16 @@
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{makecell}
+
+\begin{document}
+\begin{tabular}{l | l | l | l | l | l | l}
+  Problem & Hash & KMP  & Z   & SA  & Aho-Corasick & SAM \\\hline
+  TIOJ 1306 & \makecell{$O(Q \lvert T \rvert + \sum \lvert P_i \rvert)$ (TLE) or \\
+                        $O(\sum \lvert P_i \rvert + \sqrt{\sum \lvert P_i \rvert} \lvert T \rvert + Q)$ }
+            & $O(Q \lvert T \rvert + \sum \lvert P_i \rvert)$ (TLE)
+            & $O(Q \lvert T \rvert + \sum \lvert P_i \rvert)$ (AC)
+            & \makecell{$O(\text{SA}(T) + \text{RMQ}_\text{build}(T) + \sum \lvert P_i \rvert \log \lvert T \rvert \text{RMQ}_\text{query}(T))$ or \\
+                        $O(\text{SA}(T) + \text{RMQ}_\text{build}(T) + \sum \lvert P_i \rvert \text{RMQ}_\text{query}(T))$}
+            & $O(\lvert T \rvert + \sum \lvert P_i \rvert)$ & $O(\lvert T \rvert + \sum \lvert P_i \rvert)$
+\end{tabular}
+\end{document}
