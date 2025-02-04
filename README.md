@@ -12,6 +12,7 @@
 - 能用其他技巧做的都不會放在 hash，如果有很多題目可以用 hash 做是正常的。
 - 請試著用多種方法做題、少用 hash！
 - 每個主題大致按照感性難度排序……吧。
+- 推刷 CSES 字串區，但是不推拿這區來驗模板（測資稍弱）。
 
 
 ### 字串匹配
@@ -38,6 +39,9 @@ KMP 和 Z：
 - [TIOJ 1531 kukukey](https://tioj.ck.tp.edu.tw/problems/1531)
 - [Codeforces 526D Om Nom and Necklace](https://codeforces.com/problemset/problem/526/D)
 - [TIOJ 1725 Massacre at Camp Happy](https://tioj.ck.tp.edu.tw/problems/1725)
+- [CSES Required Substring](https://cses.fi/problemset/task/1112/)
+    - 上課時有說過可以對自動機 DP，剛好這題很像是對只有一個字串的 AC 自動機（KMP）的狀態做 DP……
+    - 搞不好多個字串的也可以做……？
 - [POI XIII Periods of Words](https://loj.ac/p/10046)
 - [POI XII Task Template](https://szkopul.edu.pl/problemset/problem/PT4yHRX9Mmz85ndhNPGCi_WB/site/?key=statement) [解](https://cbdcoding.blogspot.com/2015/07/poi-12-stage-2-template.html)
 - [Codeforces 514C Watto and Mechanism](https://codeforces.com/problemset/problem/514/C)
@@ -57,10 +61,17 @@ SA:
 - [TIOJ 1497 喝醉的宿主 The drunk host](https://tioj.ck.tp.edu.tw/problems/1497)
 - [Library Checker Suffix Array](https://judge.yosupo.jp/problem/suffixarray)
 - [Library Checker Number of Substrings](https://judge.yosupo.jp/problem/number_of_substrings)
+- [CSES Substring Order I](https://cses.fi/problemset/task/2108/)
+    - 做法精神和數相異子字串數雷同
+    - 請試著做到 $O(\text{SA} + n)$
+- [CSES Substring Order II](https://cses.fi/problemset/task/2109/)
+    - 做法精神和前兩題雷同
+    - 請試著做到 $O(\text{SA} + n)$
 - 最長重複子字串：給定字串 $S$，求出 $S$ 的所有子字串中，出現至少兩次的、最長的那個。
     - 例： $S = \texttt{cabababc}$ ，最長的重複子字串為 $\texttt{aba}$。
     - $O(\text{SA} + n)$
     - 兩者不能重疊的話是 $O(n \log n)$
+    - [CSES Repeating Substring](https://cses.fi/problemset/task/2106)
 - [Codeforces 128B String](https://codeforces.com/problemset/problem/128/B)（第 K 小子字串）
 - [Codeforces 1252D Find String in a Grid](https://codeforces.com/problemset/problem/1252/D)
 - [2020 IOICamp Day5 pD 小風數堅果](https://oj.ntucpc.org/problems/267)
